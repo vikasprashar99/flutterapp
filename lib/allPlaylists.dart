@@ -69,17 +69,7 @@ class PlaylistScreen extends StatelessWidget {
                 SizedBox(
                   height: 30.0,
                 ),
-                Column(
-                  children: <Widget>[
-                    Container(
-                      height: 250.0,
-                      decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                    ),
-                  ],
-                ),
+                
                 SizedBox(
                   height: 20.0,
                 ),
@@ -92,13 +82,13 @@ class PlaylistScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
                             width: 100.0,
                             height: 100.0,
                             decoration: BoxDecoration(
@@ -106,19 +96,11 @@ class PlaylistScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                           ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            width: 260.0,
-                            height: 170.0,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                          ),
-                        ),
-                      ],
+                          SizedBox(width:10.0),
+                          Text("YTO")
+                          
+                        ],
+                      ),
                     ),
                   ],
                 ),

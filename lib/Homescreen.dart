@@ -17,82 +17,86 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
 
         body: SafeArea(
-      child: ListView(
-        padding: EdgeInsets.symmetric(vertical: 30.0),
-        children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text("Listen to Your",
-                  style: TextStyle(
-                      fontSize: 50.0,
-                      fontWeight: FontWeight.w900,
-                      fontFamily: 'Times New Roman'
-                      ))
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text("Favourite Podcast",
-                  style: TextStyle(
-                      fontSize: 50.0,
-                      fontWeight: FontWeight.w900,
-                      fontFamily: 'Impact'))
-            ],
-          ),
-          SizedBox(height: 20.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                "Discover more than 100+ Best Talks Ever",
-                style: TextStyle(
-                    fontSize: 22.0,
-                                          fontFamily: 'Times New Roman',
-                    fontStyle: FontStyle.normal,
-                    color: Colors.grey),
-                    
-              )
-            ],
-          ),
-          SizedBox(height: 20.0),
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Row(
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: ListView(
+          padding: EdgeInsets.symmetric(vertical: 30.0),
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Expanded(
-                  child: Container(
-                    height: 70.0,
-                    decoration: BoxDecoration(
-                      color: Colors.pink[50],
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: <Widget>[
-                            Text("Search For Podcast"),
-                          ]),
-                    ),
-                  ),
-                ),
-                Container(
-                    width: 60.0,
-                    height: 68.0,
-                    decoration: BoxDecoration(
-                      color: Colors.pinkAccent,
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    child: (Icon(Icons.search)))
+                Text("Listen to Your",
+                    style: TextStyle(
+                        fontSize: 35.0,
+                        fontWeight: FontWeight.w900,
+                        fontFamily: 'Times New Roman'
+                        ))
               ],
             ),
-          ),
-          SizedBox(height: 15.0),
-          Cards(),
-          Playlist(),
-        ],
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text("Favourite Podcast",
+                    style: TextStyle(
+                        fontSize: 35.0,
+                        fontWeight: FontWeight.w900,
+                                              fontFamily: 'Times New Roman'
+))
+              ],
+            ),
+            SizedBox(height: 20.0),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "Discover more than 100+ Best Talks Ever",
+                  style: TextStyle(
+                      fontSize: 18.0,
+                                            fontFamily: 'Times New Roman',
+                      fontStyle: FontStyle.normal,
+                      color: Colors.grey),
+                      
+                )
+              ],
+            ),
+            SizedBox(height: 20.0),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      height: 70.0,
+                      decoration: BoxDecoration(
+                        color: Colors.pink[50],
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Text("Search For Podcast"),
+                            ]),
+                      ),
+                    ),
+                  ),
+                  Container(
+                      width: 60.0,
+                      height: 68.0,
+                      decoration: BoxDecoration(
+                        color: Colors.pinkAccent,
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      child: (Icon(Icons.search)))
+                ],
+              ),
+            ),
+            SizedBox(height: 15.0),
+            Cards(),
+            Playlist(),
+          ],
+        ),
       ),
     ),
      bottomNavigationBar: BottomNavigationBar(

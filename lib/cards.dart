@@ -6,7 +6,7 @@ class Cards extends StatelessWidget {
     return Column(
       children: <Widget>[
         Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(10.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
@@ -32,7 +32,7 @@ class Cards extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (BuildContext context, int index) {
                   return Container(
-                    margin: EdgeInsets.all(15.0),
+                    margin: EdgeInsets.all(10.0),
                     width: 240.0,
                     decoration: BoxDecoration(
                       color: Colors.pink[100],
