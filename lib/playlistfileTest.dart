@@ -22,7 +22,7 @@ class PlaylistScreenTest extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Container(
-                  height: 130.0,
+                  height: 135.0,
                   decoration: BoxDecoration(
                     color: Colors.red[100],
                     borderRadius: BorderRadius.circular(10.0),
@@ -48,7 +48,7 @@ class PlaylistScreenTest extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 50.0),
+                SizedBox(height: 52.0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
@@ -67,11 +67,11 @@ class PlaylistScreenTest extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 30.0,
+                  height: 32.0,
                 ),
                 
                 SizedBox(
-                  height: 20.0,
+                  height: 22.0,
                 ),
                 Stack(
                   children: <Widget>[
@@ -96,7 +96,7 @@ class PlaylistScreenTest extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                           ),
-                          SizedBox(width:10.0),
+                          SizedBox(width:12.0),
                           Text("YTO")
                           
                         ],
