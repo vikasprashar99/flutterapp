@@ -13,13 +13,13 @@ class Cards extends StatelessWidget {
               Text(
                 "Top of the week",
                 style: TextStyle(
-                  fontSize: 25.0,
+                  fontSize: 26.0,
                   fontWeight: FontWeight.w800,
                 ),
               ),
               Text(
                 "View All",
-                style: TextStyle(fontSize: 22.0, color: Colors.pinkAccent),
+                style: TextStyle(fontSize: 23.0, color: Colors.pinkAccent),
               )
             ],
           ),
@@ -27,21 +27,21 @@ class Cards extends StatelessWidget {
         ),
        
         Container(
-            height: 290.0,
+            height: 292.0,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (BuildContext context, int index) {
                   return Container(
                     margin: EdgeInsets.all(10.0),
-                    width: 240.0,
+                    width: 242.0,
                     decoration: BoxDecoration(
                       color: Colors.pink[100],
-                      borderRadius: BorderRadius.circular(10.0),
+                      borderRadius: BorderRadius.circular(12.0),
                     ),
                   );
                 })
                 ),
-                SizedBox(height:5.0),
+                SizedBox(height:6.0),
                 
       ],
     );
